@@ -1,6 +1,6 @@
 # PostCSS :Export
 
-[PostCSS] plugin to transpile :export into :root.
+[POSTCSS](https://www.npmjs.com/package/postcss) plugin to transpile :export into :root.
 This is useful when you need to share CSS variables with JS without a middle man JSON file.
 **Please note this plugin requires style-loader and css-loader.**
 
@@ -36,7 +36,7 @@ Define variables in a dedicated CSS file.
 
 Import CSS into JS using style-loader and css-loader as a object.
 ```javascript
-import variables from '!!style-loader!css-loader!@vars/colors';
+import variables from '!!style-loader!css-loader!./variables-file.css';
 
 const padding = variables['--padding'];
 const color = variables['--color'];
